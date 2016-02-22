@@ -4,5 +4,6 @@
     # mkdir -p /docker/squid/conf
     拷贝squid.conf到此目录下，并且命名为squid.user.conf
     # cp squid.conf /docker/squid/conf/squid.user.conf
+    # chown squid.squid /docker/squid 
     启动docker
     # docker run --name squid -d --restart=always --publish 80:80 --volume /docker/squid:/var/spool/squid centos7/squid
