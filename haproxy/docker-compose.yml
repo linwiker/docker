@@ -1,0 +1,8 @@
+haproxy:
+  images: centos7/haproxy
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /docker/haproxy:/etc/haproxy
+  restart: always
