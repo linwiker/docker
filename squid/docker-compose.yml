@@ -1,7 +1,7 @@
 Squid:
   images: centos7/squid
   ports:
-    - "3128:3128"
+    - "80:80"
   volumes:
     - /docker/squid:/var/spool/squid
   restart: always
