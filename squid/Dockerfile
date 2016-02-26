@@ -1,4 +1,4 @@
-From centos7:7.2.1511
+From compile02.idc1.ux:5000/centos7
 MAINTAINER wiker.zhou@uitox.com
 
 ENV SQUID_VERSION=3.5.14 \
