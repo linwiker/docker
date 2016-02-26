@@ -1,0 +1,7 @@
+Varnish:
+  images: centos7/varnish
+  ports:
+    - "80:80"
+  volumes:
+    - /mnt:/mnt
+  restart: always
