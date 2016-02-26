@@ -1,4 +1,4 @@
-From centos7:7.2.1511
+From compile02.idc1.ux:5000/centos7
 
 ENV LANG en_US.UTF-8
 RUN rm -rf /etc/yum.repos.d/* 
@@ -7,9 +7,6 @@ RUN yum clean all \
  && yum update -y \
  && yum install haproxy -y \
  && rm -rf /etc/haproxy/haproxy.cfg
-
-#COPY entrypoint.sh /sbin/entrypoint.sh
-#RUN chmod 755 /sbin/entrypoint.sh
 
 EXPOSE 80
 EXPOSE 443
