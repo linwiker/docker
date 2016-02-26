@@ -10,6 +10,7 @@ ENV PIDFile=/var/run/varnish.pid \
     VARNISH_STORAGE="file,/mnt/varnish_storage.bin,200G" \
     VARNISH_TTL=120 \
     DAEMON_OPTS="-p thread_pool_min=50 -p thread_pool_max=1000 -p thread_pool_timeout=1200"
+
 ENV VARNISH_BACKEND_PORT=80 \
     VARNISH_BACKEND_IP="img.idc1.ux"
 
